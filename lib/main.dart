@@ -1,8 +1,7 @@
 import 'package:app_utiapires/Interfaz/principalwidget.dart';
 import 'package:flutter/material.dart';
-
-void main() {
-  runApp(const MyApp());
+void main() async {
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {

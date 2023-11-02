@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'package:app_utiapires/DB/BasedeDatos.dart';
 import 'package:app_utiapires/Interfaz/Menulateralwidget.dart';
 import 'package:app_utiapires/Interfaz/configresponse.dart';
 import 'package:flutter/material.dart';
@@ -96,11 +95,6 @@ class _RandomUserWidgetState extends State<RandomUsuariorWidget> {
             ),
           ),
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () async {
-        },
-        child: Icon(Icons.add),
       ),
     );
   }

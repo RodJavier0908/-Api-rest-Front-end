@@ -1,6 +1,4 @@
 import 'dart:convert';
-import 'dart:math';
-import 'package:app_utiapires/DB/BasedeDatos.dart';
 import 'package:app_utiapires/Interfaz/Menulateralwidget.dart';
 import 'package:app_utiapires/Interfaz/configresponse.dart';
 import 'package:app_utiapires/imagenes/imgcoctel.dart';
@@ -88,52 +86,12 @@ class _RandomCocktailWidgetState extends State<CoctelesWidget> {
                   ),
                 ),
               ),
-          /*    Center(
-                child: Container(
-                  child: Column(
-                    children: [
-                      FutureBuilder<List<Map<String, dynamic>>>(
-                        future: DB.traercoctel(),
-                        builder: (context, snapshot) {
-                          if(!snapshot.hasData){
-                            return const CircularProgressIndicator();
-                          }
-                          final items = snapshot.data;
 
-                          return Expanded(
-                            child: ListView.builder(
-                              itemCount: items!.length,
-                              itemBuilder: (context, index) {
-                                final item = items[index];
-                                final nombre = item['nombre'];
-                                final instrucciones = item['instruccion'];
-                                final tiempo = item['tiempo'];
-
-                                return Card(
-                                  child: ListTile(
-                                    title: Text('Nombre: $nombre'),
-                                    subtitle: Text('Instrucciones: $instrucciones\nFecha: $tiempo'),
-                                  ),
-                                );
-                              },
-                            ),
-                          );
-                        },
-                      ),
-                    ],
-                  ),
-                ),
-              ),*/
             ],
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () async {
 
-        },
-        child: Icon(Icons.add),
-      ),
     );
   }
 }
