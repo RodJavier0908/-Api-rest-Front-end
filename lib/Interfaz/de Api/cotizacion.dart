@@ -42,20 +42,20 @@ class _cotizacionwidgetState extends State<cotizacionwidget> {
       bonanzaC = cambios?.dolarpy?.bcp?.compra?.toString() ?? "N/A";
       bonanzaV = cambios?.dolarpy?.bcp?.venta?.toString() ?? "N/A";
 
-      amambayC = cambios?.dolarpy?.bcp?.compra?.toString() ?? "N/A";
-      amambayV = cambios?.dolarpy?.bcp?.venta?.toString() ?? "N/A";
+      amambayC = cambios?.dolarpy?.amambay?.compra?.toString() ?? "N/A";
+      amambayV = cambios?.dolarpy?.amambay?.venta?.toString() ?? "N/A";
 
-      InterfizaC = cambios?.dolarpy?.bcp?.compra?.toString() ?? "N/A";
-      InterfizaV = cambios?.dolarpy?.bcp?.venta?.toString() ?? "N/A";
+      InterfizaC = cambios?.dolarpy?.interfisa?.compra?.toString() ?? "N/A";
+      InterfizaV = cambios?.dolarpy?.interfisa?.venta?.toString() ?? "N/A";
 
-      MaxiCambiosC = cambios?.dolarpy?.bcp?.compra?.toString() ?? "N/A";
-      MaxiCambiosV = cambios?.dolarpy?.bcp?.venta?.toString() ?? "N/A";
+      MaxiCambiosC = cambios?.dolarpy?.maxicambios?.compra?.toString() ?? "N/A";
+      MaxiCambiosV = cambios?.dolarpy?.maxicambios?.venta?.toString() ?? "N/A";
 
-      EuroscambioC = cambios?.dolarpy?.bcp?.compra?.toString() ?? "N/A";
-      EurocambiasV = cambios?.dolarpy?.bcp?.venta?.toString() ?? "N/A";
+      EuroscambioC = cambios?.dolarpy?.eurocambios?.compra?.toString() ?? "N/A";
+      EurocambiasV = cambios?.dolarpy?.eurocambios?.venta?.toString() ?? "N/A";
 
-      CambiosChacoC = cambios?.dolarpy?.bcp?.compra?.toString() ?? "N/A";
-      CambiosChacoV = cambios?.dolarpy?.bcp?.venta?.toString() ?? "N/A";
+      CambiosChacoC = cambios?.dolarpy?.cambioschaco?.compra?.toString() ?? "N/A";
+      CambiosChacoV = cambios?.dolarpy?.cambioschaco?.venta?.toString() ?? "N/A";
     });
   }
   String SetC = "N/A";

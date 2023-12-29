@@ -1,5 +1,6 @@
 import 'package:app_utiapires/Interfaz/Menulateralwidget.dart';
 import 'package:app_utiapires/Interfaz/configresponse.dart';
+import 'package:app_utiapires/imagenes/imghome.dart';
 import 'package:flutter/material.dart';
 
 class cuerpowidget extends StatefulWidget {
@@ -46,7 +47,9 @@ class _cuerpowidgetState extends State<cuerpowidget> {
                     ],
                   ),
                 ),
-
+                Center(
+                  child: imghome(),
+                ),
               ],
             ),
           ),
